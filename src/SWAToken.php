@@ -75,7 +75,6 @@ final class SWAToken {
         }
 
         if (! $provider->verify($token->getToken(), $token->signature)) {
-            echo 'hm...';
             return false;
         }
 
